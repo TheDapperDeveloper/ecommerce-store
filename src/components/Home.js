@@ -21,6 +21,7 @@ export default function Home() {
 
   return (
     <div>
+      <h1>Garage</h1>
       {carInfo.map((car) => (
         <img src={car.Image} alt=""></img>
       ))}
