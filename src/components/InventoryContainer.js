@@ -8,11 +8,9 @@ export default function InventoryContainer(props) {
   return (
     <div>
       <CardContainer>
-        <Cards>
-          {props.carInfo.map((car) => (
-            <InventoryCards cars={car} />
-          ))}
-        </Cards>
+        {props.carInfo.map((car) => (
+          <InventoryCards cars={car} />
+        ))}
       </CardContainer>
     </div>
   );
