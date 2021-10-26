@@ -1,4 +1,6 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { AddToCart } from "../actions/CartActions";
 import {
   AddToCartButton,
   Images,
@@ -6,6 +8,8 @@ import {
 import { Cards } from "../styled-components/InventoryCardContainerStyle";
 
 export default function InventoryCards(props) {
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
   return (
     <div>
       <Cards>
@@ -16,7 +20,9 @@ export default function InventoryCards(props) {
         <p>Mileage: {props.cars.Mileage} miles</p>
         <p>{props.cars.Description}</p>
         <h3>{props.cars.Cost}</h3>
-        <AddToCartButton>Add to Cart</AddToCartButton>
+        <AddToCartButton onClick={() => AddToCart(dispatch, props.cars, cart)}>
+          Add to Cart
+        </AddToCartButton>
       </Cards>
     </div>
   );
