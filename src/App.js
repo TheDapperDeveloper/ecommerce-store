@@ -8,12 +8,14 @@ function App() {
   return (
     <Router>
       <Switch>
-        {/* <Header /> */}
-        <Route path="/home">
-          <Home />
-        </Route>
-        {/* <Route path="/inventory"></Route>
+        <div>
+          <Header />
+          <Route path="/home">
+            <Home />
+          </Route>
+          {/* <Route path="/inventory"></Route>
           <Route path="/cart"></Route> */}
+        </div>
       </Switch>
     </Router>
   );

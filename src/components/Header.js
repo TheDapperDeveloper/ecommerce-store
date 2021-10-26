@@ -1,5 +1,6 @@
 import React from "react";
-import { HeaderLink } from "../styled-components/HeaderStyle";
+import { Link } from "react-router-dom";
+import HeaderLinks from "./HeaderLinks";
 
 import { headerdata } from "./HeaderLinksData";
 
@@ -7,7 +8,7 @@ export default function Header(props) {
   return (
     <div>
       {headerdata?.map((linkData) => (
-        <HeaderLink linkData={linkData} />
+        <HeaderLinks linkData={linkData} />
       ))}
     </div>
   );
