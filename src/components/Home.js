@@ -1,30 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { createClient } from "@supabase/supabase-js";
+import React from "react";
 
-const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
-const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
+import Inventory from "./Inventory";
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
-export default function Home() {
-  const [carInfo, setCarInfo] = useState([]);
-  useEffect(() => {
-    carDatabaseInfo();
-  }, []);
-
-  const carDatabaseInfo = async () => {
-    const { data, error } = await supabase.from("Cars").select("*");
-    setCarInfo(data);
-    console.log(data);
-    if (error) console.log("error", error);
-  };
-
+export default function Home(props) {
   return (
     <div>
       <h1>Garage</h1>
-      {carInfo.map((car) => (
+      {props.carInfo.map((car) => (
         <img src={car.Image} alt=""></img>
       ))}
+      <Inventory />
     </div>
   );
 }
