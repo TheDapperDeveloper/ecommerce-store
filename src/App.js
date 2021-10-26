@@ -33,7 +33,7 @@ function App() {
             <Home carInfo={carInfo} />
           </Route>
           <Route path="/inventory">
-            <Inventory />
+            <Inventory carInfo={carInfo} />
           </Route>
           <Route path="/cart"></Route>
         </div>
