@@ -6,7 +6,7 @@ import { createClient } from "@supabase/supabase-js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Inventory from "./components/Inventory";
-import Cart from "./components/Cart";
+import CartContainer from "./components/CartContainer";
 
 const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
 const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
@@ -37,7 +37,7 @@ function App() {
             <Inventory carInfo={carInfo} />
           </Route>
           <Route path="/cart">
-            <Cart />
+            <CartContainer />
           </Route>
         </div>
       </Switch>

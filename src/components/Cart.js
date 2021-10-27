@@ -1,30 +1,22 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import {
-  CardContainer,
+  Images,
   Cards,
 } from "../styled-components/InventoryCardContainerStyle";
-import { Images } from "../styled-components/InventoryCardContainerStyle";
 
-export default function Cart() {
-  const items = useSelector((state) => state.CartReducer);
-  console.log(items);
+export default function Cart(props) {
+  console.log(props.items);
   return (
     <div>
-      <CardContainer>
-        <Cards>
-          <h1>Your Garage</h1>
-          {items.cars.map((item) => (
-            <h3>{item.Make}</h3>
-          ))}
-          {items.cars.map((item) => (
-            <h3>{item.Model}</h3>
-          ))}
-          {items.cars.map((item) => (
-            <Images src={item.Image} alt="" />
-          ))}
-        </Cards>
-      </CardContainer>
+      <Cards>
+        <h1>Your Garage</h1>
+        <h3>{props.items.Year}</h3>
+        <h3>{props.items.Make}</h3>
+        <h3>{props.items.Model}</h3>
+        <Images src={props.items.Image} alt="" />
+        <h3>{props.items.Cost}</h3>
+        <button>Remove from Cart</button>
+      </Cards>
     </div>
   );
 }
