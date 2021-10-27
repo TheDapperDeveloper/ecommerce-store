@@ -10,7 +10,6 @@ export default function Home(props) {
       {props.carInfo.map((car) => (
         <img src={car.Image} alt=""></img>
       ))}
-      <Inventory />
     </div>
   );
 }
