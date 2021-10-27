@@ -1,4 +1,8 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../action-types/cart-types";
+import {
+  ADD_TO_CART,
+  REMOVE_FROM_CART,
+  INCREASE_QUANTITY,
+} from "../action-types/cart-types";
 
 export const AddToCart = (dispatch, product) => {
   console.log("Item added to cart");
@@ -8,4 +12,8 @@ export const AddToCart = (dispatch, product) => {
 export const RemoveFromCart = (dispatch, id) => {
   console.log("Item removed to cart");
   dispatch({ type: REMOVE_FROM_CART, payload: id });
+};
+
+export const IncreaseQuantity = (dispatch, id) => {
+  dispatch({ type: INCREASE_QUANTITY, payload: id });
 };

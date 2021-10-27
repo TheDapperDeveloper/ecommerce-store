@@ -1,5 +1,5 @@
 import React, { useState, useSelector } from "react";
-import { RemoveFromCart } from "../actions/CartActions";
+import { RemoveFromCart, IncreaseQuantity } from "../actions/CartActions";
 import CartReducer from "../redux/reducers/CartReducer";
 import {
   Images,
@@ -22,6 +22,9 @@ export default function Cart(props) {
         <h3>{props.items.Cost}</h3>
         <button onClick={() => RemoveFromCart(dispatch, props.items.id)}>
           Remove from Cart
+        </button>
+        <button onClick={() => IncreaseQuantity(dispatch, props.items.id)}>
+          Add
         </button>
       </Cards>
     </div>
