@@ -5,7 +5,7 @@ export const AddToCart = (dispatch, product) => {
   dispatch({ type: ADD_TO_CART, payload: product });
 };
 
-export const RemoveFromCart = (dispatch) => {
-  console.log("Item added to cart");
-  dispatch({ type: REMOVE_FROM_CART });
+export const RemoveFromCart = (dispatch, id) => {
+  console.log("Item removed to cart");
+  dispatch({ type: REMOVE_FROM_CART, payload: id });
 };

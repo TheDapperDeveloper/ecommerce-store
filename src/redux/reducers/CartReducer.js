@@ -10,7 +10,10 @@ const CartReducer = (state = initialState, action) => {
     case ADD_TO_CART:
       return { ...state, cars: [...state.cars, action.payload] };
     case REMOVE_FROM_CART:
-      return state;
+      return {
+        ...state,
+        cars: state.cars.filter((item) => item.id !== action.payload),
+      };
     default:
       return state;
   }
