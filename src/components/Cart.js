@@ -6,6 +6,10 @@ import {
   Cards,
 } from "../styled-components/InventoryCardContainerStyle";
 import { useDispatch } from "react-redux";
+import {
+  AddSubtractButton,
+  RemoveFromCartButton,
+} from "../styled-components/CartCardStyle";
 
 export default function Cart(props) {
   const dispatch = useDispatch();
@@ -29,16 +33,27 @@ export default function Cart(props) {
         <Images src={props.items.Image} alt="" />
         <h3>{price}</h3>
         <h3>{props.items.quantity}</h3>
-        <button onClick={() => RemoveFromCart(dispatch, props.items.id)}>
-          Remove from Cart
-        </button>
-        <button
+        <AddSubtractButton
           onClick={() =>
             IncreaseQuantity(dispatch, props.items.id, props.items.quantity)
           }
         >
-          Add
-        </button>
+          -
+        </AddSubtractButton>
+        <RemoveFromCartButton
+          onClick={() =>
+            RemoveFromCart(dispatch, props.items.id, props.items.Cost)
+          }
+        >
+          Remove from Cart
+        </RemoveFromCartButton>
+        <AddSubtractButton
+          onClick={() =>
+            IncreaseQuantity(dispatch, props.items.id, props.items.quantity)
+          }
+        >
+          +
+        </AddSubtractButton>
       </Cards>
     </div>
   );

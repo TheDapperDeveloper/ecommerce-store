@@ -26,7 +26,6 @@ export default function InventoryCards(props) {
         <h3>{props.cars.Model}</h3>
         <Images src={props.cars.Image} alt="" />
         <p>Mileage: {props.cars.Mileage} miles</p>
-        <p>{props.cars.Description}</p>
         <h3>{price}</h3>
         <AddToCartButton onClick={() => AddToCart(dispatch, props.cars, cart)}>
           Add to Cart
