@@ -20,3 +20,9 @@ export const HeaderIcons = styled.img`
   width: 100px;
   height: 100px;
 `;
+
+export const SiteTitle = styled.h1`
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+`;

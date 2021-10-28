@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import SimpleImageSlider from "react-simple-image-slider";
+import { SliderDiv, ExploreLink } from "../styled-components/HomeStyle";
 
 const images = [
   {
@@ -18,10 +19,10 @@ const images = [
 export default function Home(props) {
   return (
     <div>
-      <h2>Used luxury cars available to all</h2>
       <div>
-        <h3>Featured</h3>
-        <div className="sliderimage">
+        <SliderDiv>
+          <h2>Used luxury cars available to all</h2>
+          <h3>Featured</h3>
           <SimpleImageSlider
             images={images}
             width={896}
@@ -31,9 +32,9 @@ export default function Home(props) {
             loop={true}
             autoPlay={true}
           />
-        </div>
+        </SliderDiv>
       </div>
-      <Link to="/inventory">Explore</Link>
+      <ExploreLink to="/inventory">Explore</ExploreLink>
     </div>
   );
 }
