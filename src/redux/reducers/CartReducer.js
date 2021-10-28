@@ -25,15 +25,6 @@ const CartReducer = (state = initialState, action) => {
         ...state,
         cars: state.cars.filter((item) => item.id !== action.payload),
         subtotal: carsSubtotal,
-
-        //state.cars.reduce(function (acc, curr) {
-        // return parseInt(acc.subtotal) - parseInt(curr.Cost);
-        // }),
-        // subtotal: parseInt(state.subtotal) - parseInt(action.payload.Cost),
-        // .reduce
-        //state.cars.filter(
-        // (item) => state.subtotal - parseInt(action.payload.Cost)
-        //),
       };
     case INCREASE_QUANTITY:
       return {

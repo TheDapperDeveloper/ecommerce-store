@@ -27,10 +27,11 @@ export const AddToCartButton = styled.button`
   height: 40px;
   width: 150px;
   background-color: #004d40;
-  background-image: -webkit-linear-gradient(bottom right, #65cfda, #ffffff);
+  background-image: -webkit-linear-gradient(bottom right, #65cfda, #00acea);
   border: none;
   color: #181818;
   border-radius: 20px;
+
   font-family: "Noto Sans Display", sans-serif;
   font-weight: bolder;
   margin-bottom: 5px;
