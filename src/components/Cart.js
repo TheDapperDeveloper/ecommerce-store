@@ -20,10 +20,15 @@ export default function Cart(props) {
         <h3>{props.items.Model}</h3>
         <Images src={props.items.Image} alt="" />
         <h3>{props.items.Cost}</h3>
+        <h3>{props.items.quantity}</h3>
         <button onClick={() => RemoveFromCart(dispatch, props.items.id)}>
           Remove from Cart
         </button>
-        <button onClick={() => IncreaseQuantity(dispatch, props.items.id)}>
+        <button
+          onClick={() =>
+            IncreaseQuantity(dispatch, props.items.id, props.items.quantity)
+          }
+        >
           Add
         </button>
       </Cards>

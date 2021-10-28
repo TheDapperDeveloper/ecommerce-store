@@ -10,6 +10,14 @@ import { Cards } from "../styled-components/InventoryCardContainerStyle";
 export default function InventoryCards(props) {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
+
+  const stringCarPrice = props.cars.Cost;
+  const currencyCarPrice = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+
+  const price = currencyCarPrice.format(stringCarPrice);
   return (
     <div>
       <Cards>
@@ -19,7 +27,7 @@ export default function InventoryCards(props) {
         <Images src={props.cars.Image} alt="" />
         <p>Mileage: {props.cars.Mileage} miles</p>
         <p>{props.cars.Description}</p>
-        <h3>{props.cars.Cost}</h3>
+        <h3>{price}</h3>
         <AddToCartButton onClick={() => AddToCart(dispatch, props.cars, cart)}>
           Add to Cart
         </AddToCartButton>

@@ -15,3 +15,8 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   width: 100%;
 `;
+
+export const HeaderIcons = styled.img`
+  width: 100px;
+  height: 100px;
+`;
