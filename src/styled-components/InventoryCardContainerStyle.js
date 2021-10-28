@@ -10,9 +10,10 @@ export const CardContainer = styled.div`
 export const Cards = styled.div`
   background-color: #49327a;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #65cfda;
   font-family: "Changa", sans-serif;
+  margin-bottom: 50px;
 `;
 
 export const Images = styled.img`
@@ -34,4 +35,11 @@ export const AddToCartButton = styled.button`
   font-weight: bolder;
   margin-bottom: 5px;
   margin-top: 10px;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const SubTitle = styled.h3`
+  padding: 20px;
 `;

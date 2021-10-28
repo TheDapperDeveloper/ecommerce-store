@@ -4,6 +4,7 @@ import CartReducer from "../redux/reducers/CartReducer";
 import {
   Images,
   Cards,
+  SubTitle,
 } from "../styled-components/InventoryCardContainerStyle";
 import { useDispatch } from "react-redux";
 import {
@@ -26,13 +27,12 @@ export default function Cart(props) {
   return (
     <div>
       <Cards>
-        <h1>Your Garage</h1>
-        <h3>{props.items.Year}</h3>
-        <h3>{props.items.Make}</h3>
-        <h3>{props.items.Model}</h3>
+        <SubTitle>
+          {props.items.Year} {props.items.Make} {props.items.Model}
+        </SubTitle>
+
         <Images src={props.items.Image} alt="" />
         <h3>{price}</h3>
-        <h3>{props.items.quantity}</h3>
         <AddSubtractButton
           onClick={() =>
             IncreaseQuantity(dispatch, props.items.id, props.items.quantity)

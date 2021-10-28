@@ -29,5 +29,8 @@ export const ExploreLink = styled(Link)`
   padding: 20px;
   display: flex;
   justify-content: center;
-  width: 10%;
+  width: 50%;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
