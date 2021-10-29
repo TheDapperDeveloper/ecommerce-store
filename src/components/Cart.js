@@ -14,7 +14,6 @@ import {
 
 export default function Cart(props) {
   const dispatch = useDispatch();
-  console.log(props.items);
 
   const stringCarPrice = props.items.Cost;
   const currencyCarPrice = new Intl.NumberFormat("en-US", {

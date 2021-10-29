@@ -16,6 +16,12 @@ export const HeaderLink = styled(Link)`
   width: 100%;
 `;
 
+export const HeaderDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+
 export const HeaderIcons = styled.img`
   width: 100px;
   height: 100px;

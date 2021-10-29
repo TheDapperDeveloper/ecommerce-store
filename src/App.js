@@ -22,7 +22,6 @@ function App() {
   const carDatabaseInfo = async () => {
     const { data, error } = await supabase.from("Cars").select("*");
     setCarInfo(data);
-    console.log(data);
     if (error) console.log("error", error);
   };
   return (
