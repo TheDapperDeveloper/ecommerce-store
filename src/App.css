@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
 
-body {
+body,
+main,
+div {
   font-family: "Amatic SC", cursive;
 }
 
 .App {
   text-align: center;
+  font-family: "Amatic SC", cursive;
 }
 
 .App-logo {

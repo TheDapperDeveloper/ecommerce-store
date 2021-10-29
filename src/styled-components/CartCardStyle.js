@@ -10,8 +10,9 @@ export const RemoveFromCartButton = styled.button`
   border: none;
   color: #181818;
   border-radius: 20px;
-  font-family: "Noto Sans Display", sans-serif;
   font-weight: bolder;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
   margin-bottom: 5px;
   margin-top: 10px;
   &:hover {
@@ -29,7 +30,7 @@ export const AddSubtractButton = styled.button`
   border: none;
   color: #181818;
   border-radius: 20px;
-  font-family: "Noto Sans Display", sans-serif;
+
   font-weight: bolder;
   margin-bottom: 5px;
   margin-top: 10px;
@@ -71,14 +72,14 @@ export const CardDisplay = styled.div`
   text-align: center;
   border-radius: 10px;
   color: #65cfda;
-  font-family: "Changa", sans-serif;
+
   margin-bottom: 50px;
   @media only screen and (device-width: 1024px) and (device-height: 1366px) {
     background-color: #49327a;
     text-align: center;
     border-radius: 10px;
     color: #65cfda;
-    font-family: "Changa", sans-serif;
+
     margin-bottom: 50px;
   }
   @media only screen and (device-width: 375px) and (device-height: 812px) {
@@ -86,7 +87,7 @@ export const CardDisplay = styled.div`
     text-align: center;
     border-radius: 10px;
     color: #65cfda;
-    font-family: "Changa", sans-serif;
+
     margin-bottom: 50px;
   }
 `;

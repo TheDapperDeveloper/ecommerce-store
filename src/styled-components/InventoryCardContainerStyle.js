@@ -26,7 +26,9 @@ export const Cards = styled.div`
   text-align: center;
   border-radius: 10px;
   color: #65cfda;
-  font-family: "Changa", sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+
   margin-bottom: 50px;
 `;
 
@@ -46,7 +48,8 @@ export const AddToCartButton = styled.button`
   color: #181818;
   border-radius: 20px;
 
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
   font-weight: bolder;
   margin-bottom: 5px;
   margin-top: 10px;

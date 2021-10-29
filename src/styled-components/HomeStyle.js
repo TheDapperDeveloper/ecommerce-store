@@ -21,15 +21,16 @@ export const ExploreLink = styled(Link)`
   background-image: -webkit-linear-gradient(bottom right, #65cfda, #00acea);
   color: #181818;
   border-radius: 20px;
-  font-family: "Noto Sans Display", sans-serif;
+  font-family: "Amatic SC", cursive;
+
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 5px;
   margin-top: 10px;
   padding: 20px;
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100px;
   &:hover {
     transform: scale(1.1);
   }
