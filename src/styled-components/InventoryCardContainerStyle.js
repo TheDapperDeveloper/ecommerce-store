@@ -1,10 +1,24 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(5, 550px);
+  grid-gap: 100px;
+  justify-content: space-evenly;
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(5, 550px);
+    grid-gap: 100px;
+    justify-content: space-evenly;
+  }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Cards = styled.div`
