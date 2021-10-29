@@ -6,6 +6,7 @@ import {
   Cards,
   SubTitle,
 } from "../styled-components/InventoryCardContainerStyle";
+import { CardDisplay } from "../styled-components/CartCardStyle";
 import { useDispatch } from "react-redux";
 import {
   AddSubtractButton,
@@ -25,7 +26,7 @@ export default function Cart(props) {
 
   return (
     <div>
-      <Cards>
+      <CardDisplay>
         <SubTitle>
           {props.items.Year} {props.items.Make} {props.items.Model}
         </SubTitle>
@@ -53,7 +54,7 @@ export default function Cart(props) {
         >
           +
         </AddSubtractButton>
-      </Cards>
+      </CardDisplay>
     </div>
   );
 }

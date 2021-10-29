@@ -3,6 +3,12 @@ import { CardContainer } from "../styled-components/InventoryCardContainerStyle"
 import { useSelector } from "react-redux";
 import Cart from "./Cart";
 
+import {
+  CartCardContainer,
+  SubTitleDiv,
+  SubTitle,
+} from "../styled-components/CartCardStyle";
+
 export default function CartContainer() {
   const items = useSelector((state) => state.CartReducer.cars);
 
@@ -16,12 +22,14 @@ export default function CartContainer() {
 
   return (
     <div>
-      <CardContainer>
-        <h2>Subtotal: {subtotal}</h2>
+      <SubTitleDiv>
+        <SubTitle>Subtotal: {subtotal}</SubTitle>
+      </SubTitleDiv>
+      <CartCardContainer>
         {items.map((item) => (
           <Cart items={item} />
         ))}
-      </CardContainer>
+      </CartCardContainer>
     </div>
   );
 }
