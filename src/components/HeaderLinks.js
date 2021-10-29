@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
   HeaderDiv,
   HeaderIcons,
@@ -9,10 +9,9 @@ import {
 export default function HeaderLinks(props) {
   return (
     <div>
-      <HeaderDiv>
+      {/* <HeaderDiv>
         <HeaderLink to={props.linkData.path}>{props.linkData.name}</HeaderLink>
-        <HeaderIcons src={props.linkData.image} alt="" />
-      </HeaderDiv>
+      </HeaderDiv> */}
       {/* <a href={props.linkData.path}>
           <HeaderIcons src={props.linkData.image} alt="" />
         </a>

@@ -11,9 +11,52 @@ export const HeaderLink = styled(Link)`
   text-decoration: none;
   font-family: "Noto Sans Display", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
-  width: 100%;
+  width: 10%;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media only screen and (device-width: 1024px) and (device-height: 1366px) {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: "Noto Sans Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    font-family: "Noto Sans Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `;
 
 export const HeaderDiv = styled.div`
@@ -31,4 +74,11 @@ export const SiteTitle = styled.h1`
   display: flex;
   justify-content: center;
   font-size: 100px;
+`;
+
+export const LinkTitle = styled.p`
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: none;
 `;
