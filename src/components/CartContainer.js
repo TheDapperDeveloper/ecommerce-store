@@ -3,10 +3,13 @@ import { CardContainer } from "../styled-components/InventoryCardContainerStyle"
 import { useSelector } from "react-redux";
 import Cart from "./Cart";
 
+import emptycart from "../styled-components/empty-cart.png";
+
 import {
   CartCardContainer,
   SubTitleDiv,
   SubTitle,
+  EmptyCartDiv,
 } from "../styled-components/CartCardStyle";
 
 export default function CartContainer() {
@@ -19,6 +22,15 @@ export default function CartContainer() {
   });
 
   const subtotal = currencySubtotal.format(stringSubtotal);
+
+  if (items.length === 0) {
+    return (
+      <EmptyCartDiv>
+        <h1>Your cart is currently empty</h1>
+        <img src={emptycart} alt="" />
+      </EmptyCartDiv>
+    );
+  }
 
   return (
     <div>

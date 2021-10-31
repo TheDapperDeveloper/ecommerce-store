@@ -49,6 +49,13 @@ export const SubTitleDiv = styled.div`
   justify-content: center;
 `;
 
+export const EmptyCartDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const CartCardContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
