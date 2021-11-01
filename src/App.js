@@ -42,7 +42,7 @@ function App() {
         <div>
           <Header />
           <HeaderDiv>
-            <HeaderLink to="/home">
+            <HeaderLink to="/">
               <HeaderIcons src={home} alt="" srcset="" />
               <LinkTitle>Home</LinkTitle>
             </HeaderLink>
