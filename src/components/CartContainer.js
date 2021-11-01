@@ -10,6 +10,7 @@ import {
   SubTitleDiv,
   SubTitle,
   EmptyCartDiv,
+  EmptyCartImage,
 } from "../styled-components/CartCardStyle";
 
 export default function CartContainer() {
@@ -27,7 +28,7 @@ export default function CartContainer() {
     return (
       <EmptyCartDiv>
         <h1>Your cart is currently empty</h1>
-        <img src={emptycart} alt="" />
+        <EmptyCartImage src={emptycart} alt="" />
       </EmptyCartDiv>
     );
   }

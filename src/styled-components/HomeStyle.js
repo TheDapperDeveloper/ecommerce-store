@@ -11,6 +11,13 @@ export const SliderDiv = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 360px !important;
+  }
 `;
 
 export const ExploreLink = styled(Link)`

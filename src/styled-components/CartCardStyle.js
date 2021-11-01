@@ -98,3 +98,10 @@ export const CardDisplay = styled.div`
     margin-bottom: 50px;
   }
 `;
+
+export const EmptyCartImage = styled.img`
+  @media only screen and (device-width: 375px) and (device-height: 812px) {
+    height: 300px;
+    width: 300px;
+  }
+`;
