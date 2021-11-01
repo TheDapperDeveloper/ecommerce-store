@@ -55,7 +55,7 @@ function App() {
               <LinkTitle>Cart</LinkTitle>
             </HeaderLink>
           </HeaderDiv>
-          <Route exact path="/home">
+          <Route exact path="/">
             <Home carInfo={carInfo} />
           </Route>
           <Route exact path="/inventory">
