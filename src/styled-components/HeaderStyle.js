@@ -70,10 +70,16 @@ export const HeaderIcons = styled.img`
   height: 100px;
 `;
 
+export const TitleIcon = styled.img`
+  width: 100px;
+  height: 100px;
+`;
+
 export const SiteTitle = styled.h1`
   display: flex;
   justify-content: center;
   font-size: 100px;
+  margin-right: 10px;
 `;
 
 export const LinkTitle = styled.p`
@@ -81,4 +87,12 @@ export const LinkTitle = styled.p`
   justify-content: center;
   font-size: 25px;
   text-decoration: none;
+`;
+
+export const LogoTitle = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: black solid 2px;
 `;

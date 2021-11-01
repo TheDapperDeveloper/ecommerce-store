@@ -1,11 +1,17 @@
 import React from "react";
 
-import { SiteTitle } from "../styled-components/HeaderStyle";
+import {
+  SiteTitle,
+  TitleIcon,
+  LogoTitle,
+} from "../styled-components/HeaderStyle";
+import logoicon from "../styled-components/traffic-jam.png";
 
 export default function Header() {
   return (
-    <div>
+    <LogoTitle>
       <SiteTitle>The Shop</SiteTitle>
-    </div>
+      <TitleIcon src={logoicon} alt="" />
+    </LogoTitle>
   );
 }
